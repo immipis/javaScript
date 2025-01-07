@@ -15,7 +15,6 @@ function getUserList() {
     .then(result => {
       addTbody2(result)
     })
-    .catch(err => console.log(err))
 }
 function findUserInfo(id) {
   fetch(`http://192.168.0.11:8099/userInfo?id=${id}`)
