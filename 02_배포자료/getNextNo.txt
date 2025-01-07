@@ -1,0 +1,5 @@
+function getNextNo(){
+  let noList = document.querySelectorAll('tbody > tr >  td:nth-of-type(2)');
+  
+  return ('00' + (Number(noList[noList.length-1].textContent) + 1)).slice(-3);
+};

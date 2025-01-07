@@ -1,0 +1,18 @@
+Header가 가지는 정보 중 Content-type : 데이터 포맷(형식)
+
+1) application/x-www-form-urlencoded 
+- key=value&key=value&...
+=> QueryString(질의문자열)
+- method : GET/POST
+
+
+2) application/json
+- { "key" : "value", "key" : "value", ... }
+   or  [ { "key" : "value" , ... },  { "key" : "value" , ... }, ... ]
+=> JSON : Javascript Object Notation
+- method : POST
+
+
+3) multipart/form-data
+- 멀티미디어 파일 전용 => 통신을 위한 인코딩 무시
+- method : POST
